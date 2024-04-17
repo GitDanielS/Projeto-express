@@ -21,21 +21,21 @@ O objetivo deste projeto é criar um carrossel de posts que exibe uma lista de p
 - Banco de dados (provavelmente MySQL, SQLite, PostgreSQL, etc.)
 
 
-**Instale as dependências do projeto:**
+##Instale as dependências do projeto:
 
 npm install
 
 markdown
 Copy code
 
-**Execute o servidor:**
+##Execute o servidor:
 
 npm start
 
 markdown
 Copy code
 
-**Abra o navegador e acesse `http://localhost:8081` para visualizar o carrossel de posts.**
+##Abra o navegador e acesse `http://localhost:8081` para visualizar o carrossel de posts.
 
 ## Personalização
 
