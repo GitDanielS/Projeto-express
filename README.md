@@ -20,7 +20,7 @@ O objetivo deste projeto é criar um carrossel de posts que exibe uma lista de p
 - Sequelize (ORM para integração com banco de dados)
 - Banco de dados (provavelmente MySQL, SQLite, PostgreSQL, etc.)
 
-csharp
+
 Copy code
 
 2. **Instale as dependências do projeto:**
