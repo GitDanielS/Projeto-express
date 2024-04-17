@@ -10,6 +10,6 @@ const Post = bd.sequelize.define('postagens',{
     }
 })
 
-Post.sync({force: true}) //Comando para executar a criação
+// Post.sync({force: true}) //Comando para executar a criação
 
 module.exports = Post; // Exportando modulos
