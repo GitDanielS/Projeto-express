@@ -1,0 +1,36 @@
+<div id="default-carousel" class="w-full " data-carousel="slide">
+    <!-- Carousel wrapper -->
+    {{#each posts}}
+        <div class="h-56 overflow-hidden rounded-lg md:h-96 text-center flex">
+            <!-- Item do carrossel -->
+            <div class="hidden duration-700 ease-in-out w-full" data-carousel-item>
+                <div class="absolute block h-screen w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-800 flex items-center justify-center">
+                    <div class="p-5 w-full">    
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{this.dataValues.titulo}}</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{this.dataValues.conteudo}}</p>
+                        <a href="/deletar/{{this.dataValues.id}}">
+                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 m-4">Deletar</button>
+                        </a>     
+                    </div>
+                </div> 
+            </div>
+        </div>
+    {{/each}}
+    <!-- Controles do carrossel -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-800 dark:bg-gray-800/30   group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-800 dark:bg-gray-800/30 group-hover:bg-red/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
