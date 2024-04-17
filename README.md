@@ -21,8 +21,6 @@ O objetivo deste projeto é criar um carrossel de posts que exibe uma lista de p
 - Banco de dados (provavelmente MySQL, SQLite, PostgreSQL, etc.)
 
 
-Copy code
-
 2. **Instale as dependências do projeto:**
 
 npm install
